@@ -15,13 +15,15 @@
 
 @interface ChromeProgressBar : UIProgressView {
 	UIColor *_tintColor;
-    NSTimer *_animationTimer;
+  NSTimer *_animationTimer;
 }
 
 
 - (ChromeProgressBar *)initWithFrame:(CGRect)frame;
 
 - (void)setProgress:(CGFloat)value animated:(BOOL)animated;
+
+- (void)setTintColor:(UIColor *)tintColor;
 
 @end
 
